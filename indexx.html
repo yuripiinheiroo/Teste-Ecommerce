@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css"> 
+   
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="indexx.html"><h1>Game Mania</h1></a>
+        </div>
+        <button class="hide" onclick=" mostrarMenu()">&#9776;</button>
+       
+        <ul id="menu" >
+            <li>
+               <a class="menu" href="#"><img class="user" src="./img/user.svg" alt=""></a>
+            </li>
+            <li>
+               <a class="menu" href="#"> <img class="cart" src="./img/shopping-cart.svg" alt=""></a>
+               <span id="marcador">0</span>
+            </li>
+            <li>
+               <a class="menu" href="jogos.html"><img class="gamer" src="./img/sports_esports_white_24dp.svg" alt=""></a>
+            </li>
+            <li>
+               <a class="menu" href="galeria.html"><img class="user" src="./img/camera.svg" alt=""></a>
+            </li>
+            <li>
+               <a class="menu" href="index.html"><img class="user" src="./img/log-out.svg" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="lançamento">
+        <a href="jogos.html"><h1>Novidades</h1></a> 
+    </div>
+
+    <div id="carouselMain" class="carousel slide carousel-white" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+         <div class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center" data-interval="3000">
+              <img src="./img/banner-berserker-desktop-imperiums-informatica 1.png" class="d-none w-100 d-md-block" alt="...">
+              <img src="./img/ps5-superr 1.png" class="d-block w-100 d-md-none" alt="">
+            </div>
+            <div class="carousel-item text-center" data-interval="3000">
+              <img src="./img/fifa22-logo-1 1.png" class="d-none w-100 d-md-block" alt="...">
+              <img src="./img/banner-berserker-desktop-imperiums-informatica 1.png" class="d-block w-100 d-md-none" alt="">
+            </div>
+            <div class="carousel-item text-center" data-interval="3000">
+              <img src="./img/ps5-superr 1.png" class="d-none w-100 d-md-block" alt="...">
+              <img src="./img/fifa22-logo-1 1.png" class="d-block w-100 d-md-none" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Proximo</span>
+          </button>
+        </div>
+        </div>
+        <hr class="mt-3" />
+
+    
+
+      <div class="Promoções">
+       <a href="jogos.html"><h2>Promoções</h2></a>
+     </div>
+
+     <section class="catalogo">
+        <div class="ajuste2 move">
+            <img class="imagem" src="./img/gta.png" alt="">
+            <a href="#"><p>Gta V</p></a>
+            <a class="valor" href="#">R$ 100,00</a>
+            <div class="botôes">
+                <button type="button" class="btn btn-outline-primary click">
+                    Comprar
+                </button>
+            </div>
+            <div class="botôes">
+                <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary click">
+                    Adicionar
+                </button>
+            </div>
+        </div>
+      <div class="ajuste2">
+          <img class="imagem" src="./img/naruto.png" alt="">
+          <a href="#"><p>Naruto Storm 4</p></a>
+          <a class="valor" href="#">R$ 129,99</a>
+          <div class="botôes">
+              <button type="button" class="btn btn-outline-primary click">
+                  Comprar
+              </button>
+          </div>
+          <div class="botôes">
+              <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary click">
+                  Adicionar
+              </button>
+          </div>
+      </div>
+      <div class="ajuste2 move">
+          <img class="imagem" src="./img/gta.png" alt="">
+          <a href="#"><p>Gta V</p></a>
+          <a class="valor" href="#">R$ 100,00</a>
+          <div class="botôes">
+              <button type="button" class="btn btn-outline-primary click">
+                  Comprar
+              </button>
+          </div>
+          <div class="botôes">
+              <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary click">
+                  Adicionar
+              </button>
+          </div>
+      </div>
+
+      <div class="ajuste2">
+        <img class="imagem" src="./img/naruto.png" alt="">
+        <a href="#"><p>Naruto Storm 4</p></a>
+        <a class="valor" href="#">R$ 129,99</a>
+        <div class="botôes">
+            <button type="button" class="btn btn-outline-primary click">
+                Comprar
+            </button>
+        </div>
+        <div class="botôes">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary click">
+                Adicionar
+            </button>
+        </div>
+    </div>
+  </section>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+              <h2>Sobre Nós</h2>
+              <div class="content">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed enim voluptatem illum. Pariatur veritatis nesciunt, perspiciatis autem explicabo aperiam aliquam, harum id unde modi quos repudiandae sequi, cupiditate tenetur nobis!</p>
+                  <div class="social">
+                      <a href="#"><img src="./img/facebook-f-brands.svg" alt=""></a>
+                      <a href="#"><img src="./img/twitter-brands.svg" alt=""></a>
+                      <a href="#"><img src="./img/instagram-brands.svg" alt=""></a>
+                      <a href="#"><img src="./img/youtube-brands.svg" alt=""></a>
+                  </div>
+              </div>
+          </div>
+          <div class="center box">
+              <h2>Endereço</h2>
+              <div class="content">
+                  <div class="place">
+                      <img class="fas" src="./img/map-pin-solid.svg" alt="">
+                      <span class="text">Birendranagar, Surkhet</span>
+                  </div>
+                  <div class="phone">
+                     <img class="fas" src="./img/phone-solid.svg" alt="">
+                      <span class="text">+5521 99999-0000</span>
+                  </div>
+                  <div class="email">
+                      <img class="fas" src="./img/envelope-solid.svg" alt="">
+                      <span class="text">abc@exemple.com</span>
+                  </div>
+              </div>
+          </div>
+          <div class="right box">
+              <h2>Contate-nos</h2>
+              <div class="content">
+                  <form action="#">
+                      <div class="email">
+                          <div class="text">Email *</div>
+                          <input type="email" required>
+                      </div>
+                      <div class="msg">
+                          <div class="text">Message *</div>
+                          <textarea cols="25" rows="2" required></textarea>
+                      </div>
+                      <div class="btn send">
+                          <button class="bt" type="submit">Enviar</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+        </div>
+        <div class="bottom">
+            <center>
+                <span class="credit">Created By <a href="#">CodingNepal</a> / </span>
+                <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+            </center>
+        </div>
+    </footer>
+    
+    <script>
+        let menu = document.getElementById("menu");
+
+        function mostrarMenu() {
+            if (menu.style.display == "flex") {
+                menu.style.display ="none"
+            } else {
+                menu.style.display = "flex"
+            }
+        }
+    </script>
+
+     
+
+    
+
+   <script src="js/script.js"></script>
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

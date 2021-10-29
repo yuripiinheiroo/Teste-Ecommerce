@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   
+
+    <style>
+       .novidade p h1{
+          display: flex;
+          
+          float: right;
+       }
+
+       footer{
+           margin-top: 100px;
+       }
+    </style>
+   
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <a href="indexx.html"><h1>Game Mania</h1></a>
+        </div>
+        <button class="hide" onclick=" mostrarMenu()">&#9776;</button>
+       
+        <ul id="menu" >
+            <li>
+               <a class="menu" href="#"><img class="user" src="./img/user.svg" alt=""></a>
+            </li>
+            <li>
+               <a class="menu" id="carrinho" href="#"> <img class="cart" src="./img/shopping-cart.svg" alt=""></a>
+               <span id="marcador">0</span>
+            </li>
+            <li>
+               <a class="menu" href="favoritos.html"><img class="gamer" src="./img/sports_esports_white_24dp.svg" alt=""></a>
+            </li>
+            <li>
+               <a class="menu" href="galeria.html"><img class="user" src="./img/camera.svg" alt=""></a>
+            </li>
+            <li>
+               <a class="menu" href="index.html"><img class="user" src="./img/log-out.svg" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+      <img src="./img/game-bannerfull.png" class="img-fluid" alt="...">
+    </div>
+
+
+    <div class="novidade">
+       <h1>Lançamentos</h1> 
+      <h2>Confira as novidades</h2>
+    </div>
+
+    <section class="jg section6">
+       <div>
+          <img src="./img/Rectangle 1.png" alt="">
+          <a href="#"><p>Farcry6</p></a>
+          <a class="valor2" href="#">R$ 400,00</a>
+          <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+       </div>
+       <div>
+          <img src="./img/Rectangle 2.png" alt="">
+          <a href="#"><p>assassin's creed valhalla</p></a>
+          <a class="valor2" href="#">R$ 300,00</a>
+          <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()"  type="button" class="btn btn-outline-primary click2 ">
+                Adicionar
+            </button>
+        </div>
+       </div>
+       <div>
+          <img src="./img/Rectangle 5.png" alt="">
+          <a href="#"><p>Village</p></a>
+          <a class="valor2" href="#">R$ 300,00</a>
+          <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary ">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+       </div>
+    </section>
+
+    <div class="novidade2"></div>
+
+    <section class="jg section2">
+       <div>
+          <img src="./img/mortalkombat.png" alt="">
+          <a href="#"><p>Mortal Kombat Ultimate</p></a> 
+          <a class="valor2" href="#">R$ 380,00</a>
+          <div class="divisao ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="divisao ajuste6 ">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+       </div>
+       <div>
+          <img src="./img/naruto.png" alt="">
+          <a href="#"><p>Naruto Storm 4</p></a>
+          <a class="valor2"  href="#">R$ 300,00</a>
+          <div class="divisao ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="divisao ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+       </div>
+       <div class="divisao">
+          <img src="./img/callofduty2.png" alt="">
+          <a href="#"><p>Call of Duty</p></a>
+          <a class="valor2"  href="#">R$ 400,00</a>
+          <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class=" divisao ajuste6 ">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+       </div>
+    </section>
+
+    <div class="Venda">
+      <h1>Mais vendidos</h1> 
+     <h2>Confira Agora</h2>
+   </div>
+    
+   <section class="jg section3">
+      <div class="cl">
+         <img src="./img/mortalkombat.png" alt="">
+         <a href="#"><p>Mortal Kombat Ultimate</p></a>
+         <a class="valor2" href="#">R$ 300,00</a>
+
+         <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div>
+         <img src="./img/mortalkombat.png" alt="">
+         <a href="#"><p>Mortal Kombat Ultimate</p></a>
+         <a class="valor2" href="#">R$ 300,00</a>
+
+         <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div>
+         <img src="./img/mortalkombat.png" alt="">
+         <a href="#"><p>Mortal Kombat Ultimate</p></a>
+         <a class="valor2" href="#">R$ 300,00</a>
+
+         <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+   </section>
+
+   <div class="novidade3"></div>
+
+
+   <section class="jg section4">
+      <div>
+         <img src="./img/Rectangle 1.png" alt="">
+         <a href="#"><p>Farcry6</p></a>
+         <a class="valor2" href="#">R$ 400,00</a>
+
+         <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div>
+         <img src="./img/Rectangle 1.png" alt="">
+         <a href="#"><p>Farcry6</p></a>
+         <a class="valor2" href="#">R$ 400,00</a>
+
+         <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div>
+         <img src="./img/Rectangle 1.png" alt="">
+         <a href="#"><p>Farcry6</p></a>
+         <a class="valor2" href="#">R$ 400,00</a>
+
+         <div class="ajuste6">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste6">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+   </section>
+
+   <div class="Promo">
+      <h1>O Melhor Preço</h1> 
+     <h2>Venha Conferir</h2>
+   </div>
+
+   
+   <section class="jg section1">
+      <div class="cl">
+         <img src="./img/Rectangle 5.png" alt="">
+         <a href="#"><p>Village</p></a>
+         <a class="valor2" href="#">R$ 400,00</a>
+
+         <div class="ajuste5">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste5 ajuste1">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div>
+         <img src="./img/Rectangle 5.png" alt="">
+         <a href="#"><p>Village</p></a>
+         <a class="valor2" href="#">R$ 400,00</a>
+
+         <div class="ajuste5">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste5 ajuste1">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div>
+         <img src="./img/Rectangle 5.png" alt="">
+         <a href="#"><p>Village</p></a>
+         <a class="valor2" href="#">R$ 400,00</a>
+
+         <div class="ajuste5">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste5 ajuste1">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+   </section>
+
+   <div class="novidade4"></div>
+
+   <section class="jg section5">
+      <div class="">
+         <img src="./img/gta.png" alt="">
+         <a href="#"><p>Gta V</p></a>
+         <a class="valor2" href="#">R$ 90,00</a>
+
+         <div class="ajuste4">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste4 ajuste1">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div class="ajuste3">
+         <img src="./img/gta.png" alt="">
+         <a href="#"><p>Gta V Edição Especial</p></a>
+         <a class="valor2" href="#">R$80,00</a>
+
+         <div class="ajuste4">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste4 ajuste1">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+      <div class="ajuste3 ajs">
+         <img src="./img/gta.png" alt="">
+         <a href="#"><p>Naruto Shippuden 4</p></a>
+         <a class="valor2" href="#">R$ 100,00</a>
+
+         <div class="ajuste4 ">
+            <button type="button" class="btn btn-outline-primary">
+                Comprar
+            </button>
+        </div>
+        <div class="ajuste4 ajuste1">
+            <button onclick="contarProdutos()" type="button" class="btn btn-outline-primary botoes">
+                Adicionar
+            </button>
+        </div>
+      </div>
+   </section>
+
+
+   <footer>
+    <div class="main-content">
+      <div class="left box">
+          <h2>Sobre Nós</h2>
+          <div class="content">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed enim voluptatem illum. Pariatur veritatis nesciunt, perspiciatis autem explicabo aperiam aliquam, harum id unde modi quos repudiandae sequi, cupiditate tenetur nobis!</p>
+              <div class="social">
+                  <a href="#"><img src="./img/facebook-f-brands.svg" alt=""></a>
+                  <a href="#"><img src="./img/twitter-brands.svg" alt=""></a>
+                  <a href="#"><img src="./img/instagram-brands.svg" alt=""></a>
+                  <a href="#"><img src="./img/youtube-brands.svg" alt=""></a>
+              </div>
+          </div>
+      </div>
+      <div class="center box">
+          <h2>Endereço</h2>
+          <div class="content">
+              <div class="place">
+                  <img class="fas" src="./img/map-pin-solid.svg" alt="">
+                  <span class="text">Birendranagar, Surkhet</span>
+              </div>
+              <div class="phone">
+                 <img class="fas" src="./img/phone-solid.svg" alt="">
+                  <span class="text">+5521 99999-0000</span>
+              </div>
+              <div class="email">
+                  <img class="fas" src="./img/envelope-solid.svg" alt="">
+                  <span class="text">abc@exemple.com</span>
+              </div>
+          </div>
+      </div>
+      <div class="right box">
+          <h2>Contate-nos</h2>
+          <div class="content">
+              <form action="#">
+                  <div class="email">
+                      <div class="text">Email *</div>
+                      <input type="email" required>
+                  </div>
+                  <div class="msg">
+                      <div class="text">Message *</div>
+                      <textarea cols="25" rows="2" required></textarea>
+                  </div>
+                  <div class="btn send">
+                      <button class="bt" type="submit">Enviar</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </div>
+    <div class="bottom">
+        <center>
+            <span class="credit">Created By <a href="#">CodingNepal</a> / </span>
+            <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+        </center>
+    </div>
+</footer>
+
+<script>
+    let menu = document.getElementById("menu");
+
+    function mostrarMenu() {
+        if (menu.style.display == "flex") {
+            menu.style.display ="none"
+        } else {
+            menu.style.display = "flex"
+        }
+    }
+</script>
+
+ 
+
+
+
+
+
+
+
+   
+   
+
+    <script src="./js/script.js"></script>
+
+ 
+    
+</body>
